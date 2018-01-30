@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Dental IQuiz</string>
+    <string name="appOpening">Dental IQ`uiz</string>
+    <string name="opening">Check your dental knowledge!</string>
+    <string name="first">1. The hardest material in the human body is:</string>
+    <string name="bone">Bone</string>
+    <string name="enamel">Enamel</string>
+    <string name="stones">Dental calculus</string>
+    <string name="second">2. You should brush your teeth:</string>
+    <string name="can">When you can</string>
+    <string name="twice">Twice a day</string>
+    <string name="meal">After each meal</string>
+    <string name="third">3. A little bleeding of the gums after brushing or flossing is normal.</string>
+    <string name="fact">Fact</string>
+    <string name="fiction">Fiction</string>
+    <string name="fourth">4. Aspirin placed next to a tooth is a good way to relieve a toothache.</string>
+    <string name="fifth">5. Baby teeth don’t need to be brushed because they fall out in a few years.</string>
+    <string name="sixth">6. If I’m not having any pain in my mouth, there’s no need to see a dentist.</string>
+    <string name="seventh">7. How often should you change your toothbrush?</string>
+    <string name="threemonths">Every three months</string>
+    <string name="onceayear">Once a year</string>
+    <string name="infectious">After having an infectious disease</string>
+    <string name="bristles">When the bristles become frayed</string>
+    <string name="eighth">8. Which amount of toothpaste is appropriate? Select the picture below:</string>
+    <string name="ninth">9. How many teeth do children have in primary dentition? Please fill in a number:</string>
+    <string name="numberofteeth">Number of teeth</string>
+    <string name="toastZero">When was the last time you saw your dentist? Take care of yourself!</string>
+    <string name="toastFour">Not bad!</string>
+    <string name="toastSeven">Good job!</string>
+    <string name="toastNine">Wow! Your dentist should be proud to have you!</string>
+    <string name="toastRecommendations">* Don`t forget to brush your teeth with a fluoridated toothpaste two times a day. \n* Spaces between your teeth should be cleaned with a dental floss and interdental brushes. \n* Use a special one tooth brush for places which are hard to reach. \n* Have a healthy diet and see your dentist two times per year unless your doctor told you otherwise.</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="seeScore">See score</string>
+</resources>
