@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         EditText ninthNumber = (EditText) findViewById(R.id.number_of_teeth);
         String ninthQ= ninthNumber.getText().toString();
         if (ninthQ.equals("")){
-            Toast.makeText(getApplicationContext(),"Please enter a guess at Question 9!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),getString(R.string.NineFill), Toast.LENGTH_LONG).show();
             return;
         }
 
