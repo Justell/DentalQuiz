@@ -31,4 +31,5 @@
     <string name="toastRecommendations">* Don`t forget to brush your teeth with a fluoridated toothpaste two times a day. \n* Spaces between your teeth should be cleaned with a dental floss and interdental brushes. \n* Use a special one tooth brush for places which are hard to reach. \n* Have a healthy diet and see your dentist two times per year unless your doctor told you otherwise.</string>
     <string name="recommendations">Recommendations</string>
     <string name="seeScore">See score</string>
+    <string name="NineFill">Please enter a guess at Question 9!</string>
 </resources>
