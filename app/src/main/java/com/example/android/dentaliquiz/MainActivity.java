@@ -103,9 +103,15 @@ public class MainActivity extends AppCompatActivity {
          * Evaluate text input, if it`s 20 - add one point
          */
         EditText ninthNumber = (EditText) findViewById(R.id.number_of_teeth);
+<<<<<<< HEAD
         String ninthQ = ninthNumber.getText().toString();
         if (ninthQ.equals("")) {
             Toast.makeText(getApplicationContext(), getString(R.string.NineFill), Toast.LENGTH_LONG).show();
+=======
+        String ninthQ= ninthNumber.getText().toString();
+        if (ninthQ.equals("")){
+            Toast.makeText(getApplicationContext(),getString(R.string.NineFill), Toast.LENGTH_LONG).show();
+>>>>>>> 029b2cd65af4559fbaa649404ee370545feef921
             return;
         }
 
