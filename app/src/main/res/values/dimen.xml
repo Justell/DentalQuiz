@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="padding">20dp</dimen>
-
-    <dimen name= "textSize">15sp</dimen>
-    <dimen name= "textSizeL">18sp</dimen>
-    <dimen name= "pictureHeightL">250dp</dimen>
-    <dimen name= "pictureHeightM">100dp</dimen>
-    <dimen name= "pictureWidthM">120dp</dimen>
+    <dimen name="textSize">15sp</dimen>
+    <dimen name="textSizeL">18sp</dimen>
+    <dimen name="textSizeXL">25sp</dimen>
+    <dimen name="pictureHeightL">200dp</dimen>
+    <dimen name="pictureHeightM">100dp</dimen>
+    <dimen name="pictureWidthM">120dp</dimen>
 
 </resources>

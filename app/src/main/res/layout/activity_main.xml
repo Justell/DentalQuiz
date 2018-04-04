@@ -1,137 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/back2new"
     tools:context="com.example.android.dentaliquiz.MainActivity">
-    
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation = "vertical">
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/pictureHeightL"
-            android:src = "@drawable/back4"
-            android:scaleType="centerCrop"/>
+            style="@style/pictures"
+            android:src="@drawable/toothbrushes" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/appOpening"
-            android:textSize="@dimen/textSizeL"
-            android:textAllCaps="true"
-            android:layout_marginLeft="@dimen/padding"
-            android:layout_marginRight="@dimen/padding"
-            android:layout_marginTop="@dimen/padding"
             android:gravity="center_horizontal"
+            android:text="@string/welcome"
             android:textColor="@android:color/black"
-            />
+            android:textSize="@dimen/textSizeXL" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/opening"
-            android:textSize="@dimen/textSize"
-            android:textAllCaps="true"
-            android:padding = "@dimen/padding"
-            android:gravity="center_horizontal"
-            android:textColor="@android:color/black"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/first"
-                android:textAllCaps="true"
-                android:textSize="@dimen/textSize"
-                android:padding = "@dimen/padding"
-                android:textColor="@android:color/black"/>
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/padding">
-
-                <RadioButton
-                    android:id="@+id/bone_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/bone" />
-                <RadioButton
-                    android:id="@+id/enamel_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/enamel" />
-                <RadioButton
-                    android:id="@+id/stones_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/stones" />
-            </RadioGroup>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/second"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
-
-        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/padding">
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding"
+            android:text="@string/opening"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeL" />
+
+        <TextView
+            style="@style/questions"
+            android:text="@string/first" />
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/enamel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enamel" />
+
+            <RadioButton
+                android:id="@+id/bone_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bone" />
+
+            <RadioButton
+                android:id="@+id/stones_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stones" />
+        </RadioGroup>
+
+        <TextView
+
+            style="@style/questions"
+            android:text="@string/second" />
+
+        <RadioGroup style="@style/radioGroup">
+
+            <RadioButton
+                android:id="@+id/meal_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meal" />
+
+            <RadioButton
+                android:id="@+id/twice_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twice" />
 
             <RadioButton
                 android:id="@+id/can_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/can" />
-            <RadioButton
-                android:id="@+id/twice_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/twice" />
-            <RadioButton
-                android:id="@+id/meal_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/meal" />
+
+
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/third"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
+            style="@style/questions"
+            android:text="@string/third" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/padding">
+        <RadioGroup style="@style/radioGroup">
 
             <RadioButton
                 android:id="@+id/three_fact_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fact" />
+
             <RadioButton
                 android:id="@+id/three_fiction_button"
                 android:layout_width="wrap_content"
@@ -140,25 +106,18 @@
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fourth"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/padding">
+            style="@style/questions"
+            android:text="@string/fourth" />
+
+        <RadioGroup style="@style/radioGroup">
 
             <RadioButton
                 android:id="@+id/four_fact_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fact" />
+
             <RadioButton
                 android:id="@+id/four_fiction_button"
                 android:layout_width="wrap_content"
@@ -167,25 +126,18 @@
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fifth"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/padding">
+            style="@style/questions"
+            android:text="@string/fifth" />
+
+        <RadioGroup style="@style/radioGroup">
 
             <RadioButton
                 android:id="@+id/five_fact_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fact" />
+
             <RadioButton
                 android:id="@+id/five_fiction_button"
                 android:layout_width="wrap_content"
@@ -194,25 +146,17 @@
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sixth"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
+            style="@style/questions"
+            android:text="@string/sixth" />
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="@dimen/padding">
+        <RadioGroup style="@style/radioGroup">
 
             <RadioButton
                 android:id="@+id/six_fact_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fact" />
+
             <RadioButton
                 android:id="@+id/six_fiction_button"
                 android:layout_width="wrap_content"
@@ -221,50 +165,40 @@
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/seventh"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
+            style="@style/questions"
+            android:text="@string/seventh" />
 
         <CheckBox
             android:id="@+id/three_months_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/threemonths"
-            android:layout_marginLeft="@dimen/padding"/>
+            android:layout_marginLeft="@dimen/padding"
+            android:text="@string/threemonths" />
 
         <CheckBox
             android:id="@+id/once_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/onceayear"
-            android:layout_marginLeft="@dimen/padding"/>
+            android:layout_marginLeft="@dimen/padding"
+            android:text="@string/onceayear" />
 
         <CheckBox
             android:id="@+id/infectious_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/infectious"
-            android:layout_marginLeft="@dimen/padding"/>
+            android:layout_marginLeft="@dimen/padding"
+            android:text="@string/infectious" />
 
         <CheckBox
             android:id="@+id/bristles_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/bristles"
-            android:layout_marginLeft="@dimen/padding"/>
+            android:layout_marginLeft="@dimen/padding"
+            android:text="@string/bristles" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/eighth"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:padding = "@dimen/padding"
-            android:textColor="@android:color/black"/>
+            style="@style/questions"
+            android:text="@string/eighth" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -275,7 +209,7 @@
                 android:id="@+id/paste_ok"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/padding"/>
+                android:layout_marginLeft="@dimen/padding" />
 
             <ImageView
                 android:layout_width="@dimen/pictureWidthM"
@@ -286,36 +220,29 @@
                 android:id="@+id/paste"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/padding"/>
+                android:layout_marginLeft="@dimen/padding" />
 
             <ImageView
                 android:layout_width="@dimen/pictureWidthM"
                 android:layout_height="@dimen/pictureHeightM"
-                android:src="@drawable/pastel"
-                android:layout_marginRight="@dimen/padding" />
+                android:layout_marginRight="@dimen/padding"
+                android:src="@drawable/pastel" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ninth"
-            android:textAllCaps="true"
-            android:textSize="@dimen/textSize"
-            android:layout_marginLeft="@dimen/padding"
-            android:layout_marginTop="@dimen/padding"
-            android:layout_marginRight="@dimen/padding"
-            android:textColor="@android:color/black"/>
+            style="@style/questions"
+            android:text="@string/ninth" />
 
         <EditText
             android:id="@+id/number_of_teeth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginLeft="@dimen/padding"
             android:hint="@string/numberofteeth"
             android:inputType="number"
-            android:layout_marginLeft="@dimen/padding"
-            android:layout_marginBottom="@dimen/padding"
-            android:textColor="@android:color/black"/>
+            android:textColor="@android:color/black" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -326,19 +253,19 @@
                 android:id="@+id/submit_score"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text = "@string/seeScore"
-                android:padding="@dimen/padding"
+                android:layout_weight="1"
                 android:onClick="submitScore"
-                android:layout_weight="1"/>
+                android:padding="@dimen/padding"
+                android:text="@string/seeScore" />
 
             <Button
                 android:id="@+id/submit_recommendations"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text = "@string/recommendations"
-                android:padding="@dimen/padding"
+                android:layout_weight="1"
                 android:onClick="recommendations"
-                android:layout_weight="1" />
+                android:padding="@dimen/padding"
+                android:text="@string/recommendations" />
 
         </LinearLayout>
 

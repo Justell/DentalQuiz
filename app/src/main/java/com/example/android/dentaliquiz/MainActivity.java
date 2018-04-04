@@ -1,8 +1,7 @@
 package com.example.android.dentaliquiz;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
@@ -19,49 +18,56 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *  When "See score" button is clicked, shows the result with the toast message
+     * When "See score" button is clicked, shows the result with the toast message and sets correct answers to green
      */
-    public void submitScore (View view){
+    public void submitScore(View view) {
 
         int points = 0;
+        String toastText;
 
         /**
          * Evaluating if the rights answers are checked and calculating the points
          */
         RadioButton firstQuestionButton = (RadioButton) findViewById(R.id.enamel_button);
+        firstQuestionButton.setTextColor(getResources().getColor(R.color.green));
         boolean firstQuestionTrue = firstQuestionButton.isChecked();
         if (firstQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
         RadioButton secondQuestionButton = (RadioButton) findViewById(R.id.twice_button);
+        secondQuestionButton.setTextColor(getResources().getColor(R.color.green));
         boolean secondQuestionTrue = secondQuestionButton.isChecked();
         if (secondQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
         RadioButton thirdQuestionButton = (RadioButton) findViewById(R.id.three_fiction_button);
+        thirdQuestionButton.setTextColor(getResources().getColor(R.color.green));
         boolean thirdQuestionTrue = thirdQuestionButton.isChecked();
         if (thirdQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
         RadioButton fourthQuestionButton = (RadioButton) findViewById(R.id.four_fiction_button);
+        fourthQuestionButton.setTextColor(getResources().getColor(R.color.green));
         boolean fourthQuestionTrue = fourthQuestionButton.isChecked();
         if (fourthQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
         RadioButton fifthQuestionButton = (RadioButton) findViewById(R.id.five_fiction_button);
+        fifthQuestionButton.setTextColor(getResources().getColor(R.color.green));
         boolean fifthQuestionTrue = fifthQuestionButton.isChecked();
         if (fifthQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
         RadioButton sixthQuestionButton = (RadioButton) findViewById(R.id.six_fiction_button);
+        sixthQuestionButton.setTextColor(getResources().getColor(R.color.green));
         boolean sixthQuestionTrue = sixthQuestionButton.isChecked();
         if (sixthQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
 
@@ -69,16 +75,19 @@ public class MainActivity extends AppCompatActivity {
          * In order to get a point in Question 7, user has to check three particular boxes
          */
         CheckBox seventhThreeMonths = (CheckBox) findViewById(R.id.three_months_checkbox);
+        seventhThreeMonths.setTextColor(getResources().getColor(R.color.green));
         boolean seventhThree = seventhThreeMonths.isChecked();
         CheckBox seventhInfectious = (CheckBox) findViewById(R.id.infectious_checkbox);
+        seventhInfectious.setTextColor(getResources().getColor(R.color.green));
         boolean seventhInf = seventhInfectious.isChecked();
         CheckBox seventhBristlesFrayed = (CheckBox) findViewById(R.id.bristles_checkbox);
+        seventhBristlesFrayed.setTextColor(getResources().getColor(R.color.green));
         boolean seventhBristles = seventhBristlesFrayed.isChecked();
         CheckBox seventhOnceAYear = (CheckBox) findViewById(R.id.once_checkbox);
         boolean seventhOnce = seventhOnceAYear.isChecked();
 
         if (seventhThree && seventhInf && seventhBristles && !seventhOnce) {
-            points = points + 1;
+            points++;
         }
 
         RadioButton eightQuestionButton = (RadioButton) findViewById(R.id.paste_ok);
@@ -87,86 +96,59 @@ public class MainActivity extends AppCompatActivity {
         boolean eightQuestionFalse = eightQuestionBadButton.isChecked();
 
         if (eightQuestionTrue) {
-            points = points + 1;
+            points++;
         }
 
         /**
          * Evaluate text input, if it`s 20 - add one point
          */
         EditText ninthNumber = (EditText) findViewById(R.id.number_of_teeth);
-        String ninthQ= ninthNumber.getText().toString();
-        if (ninthQ.equals("")){
-            Toast.makeText(getApplicationContext(),"Please enter a guess at Question 9!", Toast.LENGTH_LONG).show();
+        String ninthQ = ninthNumber.getText().toString();
+        if (ninthQ.equals("")) {
+            Toast.makeText(getApplicationContext(), getString(R.string.NineFill), Toast.LENGTH_LONG).show();
             return;
         }
 
         int ninthNumberOfTeeth = Integer.parseInt(ninthQ);
-        if (ninthNumberOfTeeth == 20){
-            points = points+1;
+        if (ninthNumberOfTeeth == 20) {
+            ninthNumber.setTextColor(getResources().getColor(R.color.green));
+            points++;
+        }
+        if (ninthNumberOfTeeth != 20) {
+            ninthNumber.setTextColor(getResources().getColor(R.color.red));
         }
 
 
         /**
          * Creating toast messages according points counted
          */
+
         if (points <= 1) {
-            Context context = getApplicationContext();
-            CharSequence text = "Your score: " + points + " " + getString(R.string.toastZero);
-            int duration = Toast.LENGTH_LONG;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-        }
-
-        if (points>1 && points<5){
-            Context context = getApplicationContext();
-            CharSequence text = "Your score: " + points + " " + getString(R.string.toastFour);
-            int duration = Toast.LENGTH_LONG;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-        }
-
-        if (points>4 && points<8){
-            Context context = getApplicationContext();
-            CharSequence text = "Your score: " + points + " " + getString(R.string.toastSeven);
-            int duration = Toast.LENGTH_LONG;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-        }
-
-        if (points>=8){
-            Context context = getApplicationContext();
-            CharSequence text = "Your score: " + points + " " + getString(R.string.toastNine);
-            int duration = Toast.LENGTH_LONG;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-
+            toastText = "Your score is: " + points + " " + getString(R.string.toastZero);
+            DisplayText(toastText);
+        } else if (points < 5) {
+            toastText = "Your score is: " + points + " " + getString(R.string.toastFour);
+            DisplayText(toastText);
+        } else {
+            toastText = "Your score is: " + points + " " + getString(R.string.toastNine);
+            DisplayText(toastText);
         }
 
     }
 
     /**
-     *When "Recommendations" button is clicked, shows longer toast message with recommendations
+     * When "Recommendations" button is clicked, sends intent to recommendations activity
      */
-    public void recommendations (View view){
+    public void recommendations(View view) {
 
-        Context context = getApplicationContext();
-        CharSequence text = getString(R.string.toastRecommendations);
-        int duration = Toast.LENGTH_LONG;
-
-        final Toast message = Toast.makeText(context, text, duration);
-        message.show();
-
-        new CountDownTimer(9000, 1000)
-        {
-
-            public void onTick(long millisUntilFinished) {message.show();}
-            public void onFinish() {message.show();}
-
-        }.start();
+        Intent recommendationsAct = new Intent(MainActivity.this, Recommendations.class);
+        startActivity(recommendationsAct);
     }
+
+    public void DisplayText(String message) {
+
+        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+    }
+
 
 }

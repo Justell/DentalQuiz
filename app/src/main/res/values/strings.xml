@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Dental IQuiz</string>
-    <string name="appOpening">Dental IQ`uiz</string>
-    <string name="opening">Check your dental knowledge!</string>
-    <string name="first">1. The hardest material in the human body is:</string>
+    <string name="name">Dental IQ`uiz</string>
+    <string name="welcome">Welcome to Dental IQ`uiz!</string>
+    <string name="opening">Answer the questions below and check your dental knowledge!</string>
+    <string name="first">1. The hardest material in human body is:</string>
     <string name="bone">Bone</string>
     <string name="enamel">Enamel</string>
     <string name="stones">Dental calculus</string>
@@ -14,8 +15,8 @@
     <string name="fact">Fact</string>
     <string name="fiction">Fiction</string>
     <string name="fourth">4. Aspirin placed next to a tooth is a good way to relieve a toothache.</string>
-    <string name="fifth">5. Baby teeth don’t need to be brushed because they fall out in a few years.</string>
-    <string name="sixth">6. If I’m not having any pain in my mouth, there’s no need to see a dentist.</string>
+    <string name="fifth">5. Baby teeth don’t need to be brushed because they fall out.</string>
+    <string name="sixth">6. If you`re not having any pain in your mouth, there’s no need to see a dentist.</string>
     <string name="seventh">7. How often should you change your toothbrush?</string>
     <string name="threemonths">Every three months</string>
     <string name="onceayear">Once a year</string>
@@ -28,7 +29,17 @@
     <string name="toastFour">Not bad!</string>
     <string name="toastSeven">Good job!</string>
     <string name="toastNine">Wow! Your dentist should be proud to have you!</string>
-    <string name="toastRecommendations">* Don`t forget to brush your teeth with a fluoridated toothpaste two times a day. \n* Spaces between your teeth should be cleaned with a dental floss and interdental brushes. \n* Use a special one tooth brush for places which are hard to reach. \n* Have a healthy diet and see your dentist two times per year unless your doctor told you otherwise.</string>
-    <string name="recommendations">Recommendations</string>
+    <string name="recommendations">"Recommendations</string>
+    <string name="dentalCare">Recommendations for your dental care</string>
+    <string name="brushing">Brushing</string>
+    <string name="brushRec">Brush your teeth two times a day with fluoridated toothpaste at least for two minutes. Brush the inside, outside and biting surfaces of the teeth using swirling motion with light pressure. Use a special one-tooth brush for places which are hard to reach.</string>
+    <string name="flossing">Flossing</string>
+    <string name="flossRec">Take care of your interdental spaces - most of the caries cases happen out there! Spaces between your teeth should be cleaned with a dental floss and interdental brushes, which are meassured and prescribed by dental professional.</string>
+    <string name="diet">Proper diet</string>
+    <string name="dietRec">Have a balanced diet! Limit between-meal snacks, avoid sugary food and drinks with low nutritional value. More water, whole grains, fresh fruits and vegetables, less sugar-filled sodas, sweetened fruit drinks, biscuits and sweets.</string>
+    <string name="visits">Regular visits</string>
+    <string name="visitsRec">See your dentist at least once a year unless your doctor told you otherwise.</string>
+    <string name="takeCare">Take care of yourself and don`t forget to smile!</string>
     <string name="seeScore">See score</string>
+    <string name="NineFill">Please enter a guess at Question 9!</string>
 </resources>
